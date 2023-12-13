@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Discount Calculator</title>
+  </head>
+  <body>
+    <h1>Welcome to the Online Store!</h1>
+
+    <label for="userType">Are you a guest or an existing customer?</label>
+    <select id="userType">
+      <option value="guest">Guest</option>
+      <option value="existing">Existing Customer</option>
+    </select>
+
+    <br /><br />
+
+    <label for="hasGiftCard">Do you have a gift card?</label>
+    <input type="checkbox" id="hasGiftCard" />
+
+    <br /><br />
+
+    <button onclick="calculateDiscount()">Calculate Discount</button>
+
+    <p id="discountMessage"></p>
+
+    <script src="discount.js"></script>
+  </body>
+</html>
